@@ -1,9 +1,10 @@
 let currentSlideIndex = 0;
 handleSlideDisplay(currentSlideIndex);
-addEventListeners();
+
 
 function handleNextSlide(n) {
     console.log("Going to next slide");
+    console.log(currentSlideIndex)
     currentSlideIndex += n;
     handleSlideDisplay(currentSlideIndex);
 }
@@ -25,14 +26,4 @@ function handleSlideDisplay(n) {
 
     slides[currentSlideIndex].style.display = "flex";
     navBtns[currentSlideIndex].className += " active";
-}
-
-function addEventListeners() {
-    let navBtns = document.querySelectorAll(".nav-btn")
-    for (let i in navBtns) {
-        navBtns[i].addEventListener("click", () => {
-            currentSlideIndex = i;
-            handleSlideDisplay(currentSlideIndex);
-        })
-    }
 }
