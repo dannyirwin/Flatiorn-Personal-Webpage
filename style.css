@@ -138,6 +138,13 @@ img {
     background: var(--red);
 }
 
+.img-container.wood {
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+    width: 70wv;
+}
+
+
 /* Fading animation */
 .fade {
     -webkit-animation-name: fade;
