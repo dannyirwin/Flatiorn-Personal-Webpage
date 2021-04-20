@@ -11,6 +11,10 @@
     --text-font:  'Assistant', sans-serif;
 }
 
+body {
+    background-color: var(--white);
+}
+
 main {
     padding-top: 5vh;   
     width: 100vw;
