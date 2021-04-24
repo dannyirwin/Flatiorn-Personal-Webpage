@@ -7,6 +7,8 @@ function handleNextSlide(n) {
     handleSlideDisplay();
 }
 
+
+//From W3 tutorial
 function handleSlideDisplay(n) {
     let slides = document.getElementsByClassName("slide");
     let navBtns = document.getElementsByClassName("nav-btn");

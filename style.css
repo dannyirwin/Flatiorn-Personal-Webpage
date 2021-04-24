@@ -38,10 +38,11 @@ nav {
     padding: 23px 30px 0px 30px;
     margin-bottom: 20px;
     cursor: pointer;
+    transition-duration: 0.5s;
 }
 
 .nav-btn:hover {
-
+    transform: translate(0, -5px);
 }
 
 .active {
@@ -98,12 +99,11 @@ h1 {
 
 .outside-boarder {
     border: 5px solid var(--green);
-    margin: 3em;
-    margin-bottom: auto;
-    padding: 0.5em;
+    margin: 5em 2em auto 0em;
 }
 
 .info-container {
+    margin: 0.5em;
     width: auto;
     backgrounD: var(--white);
     font-family: var(--text-font);
@@ -129,7 +129,9 @@ img {
 }
 
 .outside-boarder.dev {
-    margin: 30px;
+    margin: 30px 50px 30px 10px;
+    padding: 0.5em;
+    background-color: var(--white);
 }
 
 /*Theatre Section*/
@@ -157,6 +159,8 @@ img {
     animation-duration: 1.5s;
   }
   
+
+  /*From W3 Tutorial*/
   @-webkit-keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
