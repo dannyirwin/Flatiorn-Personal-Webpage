@@ -1,9 +1,9 @@
 :root {
 
     --white: #feefe5;
-    --green: #30638E;
+    --blue: #30638E;
     --yellow: #EDAE49;
-    --orange: #00798c;
+    --light-blue: #00798c;
     --red:#D1495B;
     --darkGreen: #003D5B;
     
@@ -60,8 +60,9 @@ nav {
 }
 
 h1 {
-    font-size: 26px;
+    font-size: 30px;
     padding-right: 20px;
+    text-shadow: 4px 3px 0px var(--green), 9px 8px 0px rgba(0,0,0,0.15);
 }
 
 .btn {
@@ -98,7 +99,7 @@ h1 {
 }
 
 .outside-boarder {
-    border: 5px solid var(--green);
+    border: 5px solid var(--blue);
     margin: 5em 2em auto 0em;
 }
 
@@ -109,6 +110,8 @@ h1 {
     font-family: var(--text-font);
     padding: 2em;
     height: auto;
+
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 img {
@@ -123,16 +126,22 @@ img {
     max-width: 60vw;
 }
 
-/*Developer Section*/
-#developer-section {
-    background: var(--orange);
+.indent-left {
+    margin-left: 10vw;
 }
 
-.outside-boarder.dev {
-    margin: 30px 50px 30px 10px;
+
+/*Developer Section*/
+#developer-section {
+    background: var(--light-blue);
+}
+
+.outside-boarder.dev-img {
+    margin: 30px 15vw 30px 10px;
     padding: 0.5em;
     background-color: var(--white);
 }
+
 
 /*Theatre Section*/
 #theatre-section {
@@ -169,4 +178,11 @@ img {
   @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+  }
+
+
+  @media only screen and (max-width: 1000px) {
+  /* TODO responsive for mobile */
+
+
   }
