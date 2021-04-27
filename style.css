@@ -20,7 +20,6 @@ main {
     width: 100vw;
     left: 0;
     position: absolute;
-
 }
 
 nav {
@@ -29,7 +28,7 @@ nav {
     justify-content: center;
     color: var(--white);
     font-family: var(--head-font);
-    border-top: solid 10px var(--green)
+    border-top: solid 10px var(--blue)
 }
 
 .nav-btn {
@@ -62,7 +61,7 @@ nav {
 h1 {
     font-size: 30px;
     padding-right: 20px;
-    text-shadow: 4px 3px 0px var(--green), 9px 8px 0px rgba(0,0,0,0.15);
+    text-shadow: 4px 3px 0px var(--blue), 9px 8px 0px rgba(0,0,0,0.15);
 }
 
 .btn {
@@ -169,7 +168,7 @@ img {
   }
   
 
-  /*From W3 Tutorial*/
+  /*Based on https://www.w3schools.com/css/css3_transitions.asp*/
   @-webkit-keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
@@ -182,7 +181,9 @@ img {
 
 
   @media only screen and (max-width: 1000px) {
+
   /* TODO responsive for mobile */
+
 
 
   }
